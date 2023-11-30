@@ -1,0 +1,57 @@
+# name: Django Build and Test CICD
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev
+#       - staging
+#   pull_request:
+#     branches:
+#       - main
+#       - dev
+#       - staging
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+
+#       - name: Check if repository is empty
+#         run: |
+#           if [ "$(ls -A)" ]; then
+#             echo "Repository is not empty. Proceeding with the workflow."
+#           else
+#             echo "Repository is empty. Skipping all steps."
+#             exit 0
+#           fi
+
+#       - name: Set up Python Environment
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.9'
+
+#       - name: Install requirements
+#         run: pip install -r nova_backend/requirements.txt
+
+      # - name: Install requirements
+      #   run: pip install -r requirements.txt
+
+      # - name: Check Syntax
+      #   run: pre-commit run --all-files
+
+      # - name: Make Migrations
+      #   run: python manage.py makemigrations
+
+      # - name: Migration
+      #   run: python manage.py migrate
+
+      # - name: Run server
+      #   run: python manage.py runserver
+
+      # - name: Run Tests
+     
+
